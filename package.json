@@ -4,7 +4,7 @@
   "url": "tjlarrechea.com",
   "version": "1.0.0",
   "description": "An Electron Templates",
-  "main": "JS/main.js",
+  "main": "JS/Primary/main.js",
   "scripts": {
     "start": "electron .",
     "pack": "electron-builder --dir",
