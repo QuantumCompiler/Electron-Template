@@ -22,7 +22,7 @@
       "target": "AppImage"
     }
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/DaTaylorSeries/Electron-Template",
   "keywords": [
     "Electron",
     "quick",
