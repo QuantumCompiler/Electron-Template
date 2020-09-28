@@ -1,3 +1,4 @@
+This is a quick start guide to building with Electron JS.
 ==================================================================================================================================================================================================================  
 Step 1: First make sure you have nodejs downloaded. The instructions for how to download these can be found below:
 
