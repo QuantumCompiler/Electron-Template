@@ -1,11 +1,39 @@
-# electron-quick-start
+==================================================================================================================================================================================================================
++                                                                            This is an Electron Quick Start Guide                                                                                               +
++                                                                    Please follow these instructions for successful building                                                                                    +
+==================================================================================================================================================================================================================  
+Step 1: First make sure you have nodejs downloaded. The instructions for how to download these can be found below:
 
-**Clone and run for a quick way to see Electron in action.**
+Windows Users: (https://nodejs.org/en/download/)
+MacOS Users: (https://nodejs.org/en/download/) (Side Note: It is worth your time if you are using MacOS to install homebrew: (https://brew.sh/)
+Linux Users: (https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions-enterprise-linux-fedora-and-snap-packages)
 
-This is a minimal Electron application based on the [Quick Start Guide](https://electronjs.org/docs/tutorial/quick-start) within the Electron documentation.
+Step 2: After nodejs has been installed, you must install npm. The instructions for this can be found below:
 
-**Use this app along with the [Electron API Demos](https://electronjs.org/#get-started) app for API code examples to help you get started.**
+Windows Users: (https://www.npmjs.com/get-npm)
+MacOS Users: (https://shapeshed.com/setting-up-nodejs-and-npm-on-mac-osx/)
+Linux Users: (https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
+Step 3: After npm is intsalled, it is HIGHLY advised you install yarn. The instructions for how to build your apps will be given with yarn. You can build with npm but this README.md will include instructions for yarn.
+
+Windows Users: (https://classic.yarnpkg.com/en/docs/install/#windows-stable)
+MacOS Users: (https://classic.yarnpkg.com/en/docs/install/#mac-stable)
+Linux Users: (https://classic.yarnpkg.com/en/docs/install/#debian-stable) (Select distro from drop down)
+
+These are the preliminary installs that are needed for building with electronjs. We will now dive into how to actually build with electronjs.
+==================================================================================================================================================================================================================
+It is highly advised that whenever you want to start a new project to just clone this repository. The url for this repository is
+
+GitHub Repo: (https://github.com/DaTaylorSeries/Electron-Template.git). Feel free to clone this repository as often as you like :)
+
+Once this has been cloned to a location on your machine, open terminal (command prompt for Windows users) and use the following commands:
+
+yarn - Installs node js modules needed to build
+yarn start - Runs your program for you to test and interact with
+yarn dist - This command is what you use to build with yarn. Type, "yarn dist --help" to get more instruction on how to build for each OS you are seeking.
+
+This is essentially all you need to know/ do to build right out of the box with this template.
+==================================================================================================================================================================================================================
 A basic Electron application needs just these files:
 
 - `package.json` - Points to the app's main file and lists its details and dependencies.
@@ -13,21 +41,6 @@ A basic Electron application needs just these files:
 - `index.html` - A web page to render. This is the app's **renderer process**.
 
 You can learn more about each of these components within the [Quick Start Guide](https://electronjs.org/docs/tutorial/quick-start).
-
-## To Use
-
-To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
-
-```bash
-# Clone this repository
-git clone https://github.com/electron/electron-quick-start
-# Go into the repository
-cd electron-quick-start
-# Install dependencies
-npm install
-# Run the app
-npm start
-```
 
 Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
 
@@ -42,4 +55,5 @@ Note: If you're using Linux Bash for Windows, [see this guide](https://www.howto
 
 ## License
 
-[CC0 1.0 (Public Domain)](LICENSE.md)
+[CC0 1.0 (Public Domain)](LICENSE.md)                                                                                    
+==================================================================================================================================================================================================================
