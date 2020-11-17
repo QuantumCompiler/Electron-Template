@@ -1,5 +1,6 @@
 {
   "name" : "ElectronTemplate",
+  "productName" : "Electron Template",
   "author" : "Taylor Larrechea <tjlarrechea@gmail.com>",
   "description" : "An Electron Template",
   "version" : "1.0.0",
