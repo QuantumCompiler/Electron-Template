@@ -1,38 +1,38 @@
-This is a quick start guide to building with Electron JS.
-==================================================================================================================================================================================================================  
-Step 1: First make sure you have nodejs downloaded. The instructions for how to download these can be found below:
+## This is a quick start guide to building with Electron JS.
+---
+#### Step 1: First make sure you have nodejs downloaded. The instructions for how to download these can be found below:
 
 [Windows Users:](https://nodejs.org/en/download/),
 [MacOS Users:](https://nodejs.org/en/download/) (Side Note: It is worth your time if you are using MacOS to install [homebrew:](https://brew.sh/), and
 [Linux Users:](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions-enterprise-linux-fedora-and-snap-packages).
 
-Step 2: After nodejs has been installed, you must install npm. The instructions for this can be found below:
+#### Step 2: After nodejs has been installed, you must install npm. The instructions for this can be found below:
 
 [Windows Users:](https://www.npmjs.com/get-npm),
 [MacOS Users:](https://shapeshed.com/setting-up-nodejs-and-npm-on-mac-osx/), and
 [Linux Users:](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 
-Step 3: After npm is intsalled, it is HIGHLY advised you install yarn. The instructions for how to build your apps will be given with yarn. You can build with npm but this README.md will include instructions for yarn:
+#### Step 3: After npm is intsalled, it is HIGHLY advised you install yarn. The instructions for how to build your apps will be given with yarn. You can build with npm but this README.md will include instructions for yarn:
 
 [Windows Users:](https://classic.yarnpkg.com/en/docs/install/#windows-stable),
 [MacOS Users:](https://classic.yarnpkg.com/en/docs/install/#mac-stable), and
 [Linux Users:](https://classic.yarnpkg.com/en/docs/install/#debian-stable) (Select distro from drop down)
 
-These are the preliminary installs that are needed for building with electronjs. We will now dive into how to actually build with electronjs.
-==================================================================================================================================================================================================================
+#### These are the preliminary installs that are needed for building with electronjs. We will now dive into how to actually build with electronjs.
+
 It is highly advised that whenever you want to start a new project to just clone this repository. The url for this repository is
 
-[GitHub Repo:](https://github.com/DaTaylorSeries/Electron-Template.git). Feel free to clone this repository as often as you like :)
+[GitHub Repo:](https://github.com/DaTaylorSeries/Electron-Template.git) Feel free to clone this repository as often as you like :)
 
 Once this has been cloned to a location on your machine, open terminal (command prompt for Windows users) and use the following commands:
 
-yarn - Installs node js modules needed to build
+yarn - Install node js modules needed to build
 yarn start - Runs your program for you to test and interact with
 yarn dist - This command is what you use to build with yarn. Type, "yarn dist --help" to get more instruction on how to build for each OS you are seeking.
 
 This is essentially all you need to know/ do to build right out of the box with this template.
-==================================================================================================================================================================================================================
-A basic Electron application needs just these files:
+
+## A basic Electron application needs just these files:
 
 - `package.json` - Points to the app's main file and lists its details and dependencies.
 - `main.js` - Starts the app and creates a browser window to render HTML. This is the app's **main process**.
@@ -50,7 +50,8 @@ Note: If you're using Linux Bash for Windows, [see this guide](https://www.howto
 - [electron/electron-api-demos](https://github.com/electron/electron-api-demos) - an Electron app that teaches you how to use Electron
 - [hokein/electron-sample-apps](https://github.com/hokein/electron-sample-apps) - small demo apps for the various Electron APIs
 
-## License
+---
 
-[CC0 1.0 (Public Domain)](LICENSE.md)                                                                                    
-==================================================================================================================================================================================================================
+#### License
+
+[CC0 1.0 (Public Domain)](LICENSE.md)                                                                                   
