@@ -1,12 +1,12 @@
 {
-  "name" : "ElectronTemplate",
-  "productName" : "Electron Template",
-  "author" : "Taylor Larrechea <tjlarrechea@gmail.com>",
-  "description" : "An Electron Template",
-  "version" : "1.0.0",
-  "license" : "CC0-1.0",
-  "main" : "JS/Primary/main.js",
-  "repository" : "https://github.com/DaTaylorSeries/Electron-Template",
+  "name": "ElectronTemplate",
+  "productName": "Electron Template",
+  "author": "Taylor Larrechea <tjlarrechea@gmail.com>",
+  "description": "An Electron Template",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "main": "JS/Primary/main.js",
+  "repository": "https://github.com/DaTaylorSeries/Electron-Template",
   "scripts": {
     "start": "electron .",
     "pack": "electron-builder --dir",
@@ -15,7 +15,13 @@
   "build": {
     "appId": "electrontemplate.app",
     "win": {
-      "target": "zip"
+      "target": "nsis"
+    },
+    "nsis": {
+      "uninstallDisplayName": "ElectronTemplate",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "license": "License/license.txt"
     },
     "mac": {
       "category": "dmg"
@@ -26,7 +32,7 @@
   },
   "devDependencies": {
     "electron": "^9.1.0",
-    "electron-builder": "^22.7.0"
+    "electron-builder": "^22.9.1"
   },
   "dependencies": {
     "electron-hot-reload": "^0.1.4",
