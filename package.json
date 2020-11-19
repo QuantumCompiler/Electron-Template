@@ -9,7 +9,7 @@
   "repository": "https://github.com/DaTaylorSeries/Electron-Template",
   "scripts": {
     "start": "electron .",
-    "pack": "electron-builder --dir",
+    "pack": "electron-packager",
     "dist": "electron-builder"
   },
   "build": {
@@ -24,7 +24,10 @@
       "license": "License/license.txt"
     },
     "mac": {
-      "category": "dmg"
+      "target": "pkg"
+    },
+    "pkg": {
+      "license": "License/license.txt"
     },
     "linux": {
       "target": "deb"
@@ -36,6 +39,7 @@
   },
   "dependencies": {
     "electron-hot-reload": "^0.1.4",
+    "electron-packager": "^15.1.0",
     "electron-reload": "^1.5.0"
   }
 }
