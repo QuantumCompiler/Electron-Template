@@ -19,11 +19,11 @@ function createWindow() {
     }
   })
 
-  // and load the index.html of the app.
+  // load file
   mainWindow.loadFile('./HTML/Primary/index.html');
 
-  // to load URL use the following
-  // mainWindow.loadURL('https://address.com')
+  // load URL
+  // mainWindow.loadURL('address goes here')
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
