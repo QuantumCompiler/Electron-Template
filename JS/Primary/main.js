@@ -1,13 +1,17 @@
 // Modules to control application life and create native browser window
 const { app, BrowserWindow } = require('electron')
 const path = require('path')
+const url = require('url');
 
 // Hot Reload
 require('electron-reload')(__dirname);
 
+// Window Constants
+let mainWindow, secondWindow;
+
 function createWindow() {
   // Create the browser window.
-  const mainWindow = new BrowserWindow({
+  mainWindow = new BrowserWindow({
     width: 1000,
     height: 620,
     webPreferences: {
@@ -17,6 +21,9 @@ function createWindow() {
 
   // and load the index.html of the app.
   mainWindow.loadFile('./HTML/Primary/index.html');
+
+  // to load URL use the following
+  // mainWindow.loadURL('https://address.com')
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
