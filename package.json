@@ -27,7 +27,17 @@
       "target": "pkg"
     },
     "pkg": {
-      "license": "License/license.txt"
+      "license": "License/license.txt",
+      "installLocation": "/Applications",
+      "background": {
+        "alignment": "bottomleft"
+      },
+      "allowAnywhere": true,
+      "allowCurrentUserHome": true,
+      "allowRootDirectory": true,
+      "isVersionChecked": true,
+      "isRelocatable": false,
+      "overwriteAction": "upgrade"
     },
     "linux": {
       "target": "deb"
