@@ -1,1 +1,9 @@
 /* Put Styles Here! */
+/* H1 Heading */
+h1{
+    color: blue; text-align: center;
+}
+/* MainWrapper */
+.mainWrapper{
+    margin: 25px;
+}
