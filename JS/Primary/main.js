@@ -25,11 +25,13 @@ function createWindow() {
   });
 
   // Create the secondary browser window (Child Window)
+  /*
   secondWindow = new BrowserWindow({
     width: 750, height: 465,
     parent: mainWindow, modal: true,
     title: 'Child'
   });
+  */
 
   /* Create a colored window
   colorWindow = new BrowserWindow({
