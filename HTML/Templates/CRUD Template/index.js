@@ -7,7 +7,7 @@ fileName = document.getElementById('fileName')
 fileContents = document.getElementById('fileContents')
 
 
-let pathName = path.join(__dirname, '../../', 'Files')
+let pathName = path.join(__dirname, 'Files')
 btnCreate.addEventListener('click', function(){
     let file = path.join(pathName, fileName.value)
     let contents = fileContents.value
