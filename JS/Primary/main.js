@@ -18,7 +18,6 @@ function createWindow() {
   // Create the main browser window (Parent Window)
   mainWindow = new BrowserWindow({
     width: 1000, height: 620,
-    title: 'Parent',
     webPreferences: {
       preload: path.join(__dirname, './Secondary/preload.js')
     }
@@ -48,9 +47,6 @@ function createWindow() {
   // load file into main window
   mainWindow.loadFile('./HTML/Primary/index.html');
 
-  // load URL into child window
-  secondWindow.loadURL('http://www.tjlarrechea.com/index.html');
-
   // load URL
   // mainWindow.loadURL('address goes here')
 
@@ -63,7 +59,7 @@ function createWindow() {
 // Some APIs can only be used after this event occurs.
 app.whenReady().then(() => {
   createWindow()
-
+  
   const template = [
     // File tab
     {
