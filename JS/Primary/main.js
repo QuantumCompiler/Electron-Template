@@ -1,5 +1,6 @@
 // Modules to control application life and create native browser window
 const electron = require("electron");
+const main = require("electron-reload");
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
 const path = require('path');
@@ -14,6 +15,7 @@ require('electron-reload')(__dirname);
 
 // Window Constants
 let mainWindow, secondWindow, colorWindow, framelessWindow;
+let splash;
 
 function createWindow() {
   // Create the main browser window (Parent Window)
@@ -54,13 +56,11 @@ function createWindow() {
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
 };
-
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
 app.whenReady().then(() => {
-  createWindow()
-
+  createWindow();
   // Build the application menu
   const template = [
     // { role: 'appMenu' }
@@ -149,7 +149,7 @@ app.whenReady().then(() => {
     role: 'help',
     submenu: [
       {
-        label: 'Learn More',
+        label: 'Documentation',
       }
     ]
   }
@@ -214,5 +214,25 @@ app.on('window-all-closed', function () {
   if (process.platform !== 'darwin') app.quit()
 });
 
-// In this file you can include the rest of your app's specific main process
-// code. You can also put them in separate files and require them here.
+// Splash Window
+/*
+  mainWindow = new BrowserWindow({
+    titleBarStyle: 'hidden',
+    width: 1000, height: 620,
+    show: false
+  });
+  // create a new `splash`-Window 
+  splash = new BrowserWindow({
+    width: 810, height: 610, 
+    transparent: false, 
+    frame: false, 
+    alwaysOnTop: true
+  });
+  splash.loadFile('.HTML/Primary/splash.html');
+  mainWindow.loadURL('https://www.google.com/');
+  // if main window is ready to show, then destroy the splash window and show up the main window
+  mainWindow.once('ready-to-show', () => {
+    splash.destroy();
+    mainWindow.show();
+  });
+*/
