@@ -28,7 +28,8 @@ Once this has been cloned to a location on your machine, open terminal (command 
 
 yarn - Install node js modules needed to build  
 yarn start - Runs your program for you to test and interact with  
-yarn dist - This command is what you use to build with yarn. Type, "yarn dist --help" to get more instruction on how to build for each OS you are seeking.
+yarn dist - This command is what you use to build with yarn.  
+yarn dist --help - Get more instruction on how to build for each OS you are seeking.
 
 This is essentially all you need to know/ do to build right out of the box with this template.
 
