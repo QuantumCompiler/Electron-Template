@@ -26,8 +26,8 @@ It is highly advised that whenever you want to start a new project to just clone
 
 Once this has been cloned to a location on your machine, open terminal (command prompt for Windows users) and use the following commands:
 
-yarn - Install node js modules needed to build
-yarn start - Runs your program for you to test and interact with
+yarn - Install node js modules needed to build \n
+yarn start - Runs your program for you to test and interact with \n
 yarn dist - This command is what you use to build with yarn. Type, "yarn dist --help" to get more instruction on how to build for each OS you are seeking.
 
 This is essentially all you need to know/ do to build right out of the box with this template.
